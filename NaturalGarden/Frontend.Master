@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Frontend.master.cs" Inherits="NaturalGarden.Frontend" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Style.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <!--Header Section-->
+        <div class="top">
+            <!-- Webiste logo -->
+            
+                <img src="Images/logo.jpg"/>
+            <%--<img src="Images/png.png" alt="Logo">--%>
+                
+            <!-- Webiste Title -->
+            <div class="top__title">
+            <h3>Natural Gardens System Frontend</h3>
+                </div>
+            <!-- Navagation Links -->
+            <div class="top__navlinks">
+            <a href="Home.aspx">Home</a> <!-- to home -->
+            <a href="Contact.aspx">Contact</a> <!-- To contact -->
+            <a href="Login.aspx">Login</a> <!-- To login -->
+                </div>
+        </div>
+
+        
+
+
+        <div id="mid">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"><!-- Middle Section -->
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <!--Footer Section-->
+        <div id="bottom">
+            <p>Copyright &copy 2023 NaturalGarden</p> <!-- Text at bottom -->
+            <p>All Rights Reserved</p>
+        </div>
+
+    </form>
+</body>
+</html>

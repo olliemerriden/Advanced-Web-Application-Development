@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Backend.master.cs" Inherits="NaturalGarden.Backend" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Style.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <!--Header Section-->
+        <div class="top admintop">
+            <!-- Webiste logo -->
+            
+                <img src="Images/logo.jpg"/>
+            <%--<img src="Images/png.png" alt="Logo">--%>
+                
+            <!-- Webiste Title -->
+            <h3>MORE System Backend</h3>
+            <!-- Navagation Links -->
+            <a href="AdminHome.aspx">Home | </a>  <!-- To admin home -->
+            <a href="ManageFlower.aspx">Manage Flowers | </a> <!-- to manage flower -->
+            <a href="ViewFlower.aspx">View Flowers | </a> <!-- to view flower -->
+            <asp:LinkButton ID="lblLogout" runat="server" Text="LOGOUT" OnClick="lblLogout_Click">LOGOUT</asp:LinkButton> <!-- logout button -->
+            <asp:Label ID="lblLoggedIAnAs" runat="server" Text="(You are logged in as: ADMIN)"></asp:Label> <!-- who user is logged in as -->
+        </div>
+
+        <div id="mid">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"> <!-- middle section -->
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <!--Footer Section-->
+        <div id="bottom">
+            <p>Copyright &copy 2023 NaturalGarden</p><!-- footer text -->
+            <p>All Rights Reserved</p>
+        </div>
+
+
+    </form>
+</body>
+</html>

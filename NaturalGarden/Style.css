@@ -1,0 +1,151 @@
+﻿body { /* For the whole body of website */
+   
+    color: black;
+    font-family: 'Kumbh Sans', sans-serif;
+    background: url("Images/background.jpg")no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+mainpage {
+    
+}
+
+/*/* HEADER AND FOOTER */
+
+.top { /* For the whole top */
+    
+    background: rgba(11,156,49,0.4);
+    text-align: center;
+    padding: 5px;
+    /*color: white;*/
+}
+
+
+
+.top__title { /* Just the title of the top */
+    text-decoration: underline;
+    color: black;
+}
+
+.top__navlinks { /* Navigation links div */
+    
+    overflow: hidden;
+}
+
+NAVIGATION LINKS
+.top__navlinks a { /* Anchor for navlinks */
+    color: black;
+    text-align: center;
+    padding: 25px 30px;
+    text-decoration: none;
+}
+
+a { /* Specfically all 'a' */
+    color: white;
+}
+
+.admintop { /* Admin Top Homepage */
+    background-color: red;
+}
+
+#bottom { /* Footer */
+    /*background-color: #164A41;*/
+    text-align: center;
+    padding: 3px;
+    background: rgba(11,156,49,0.4);
+}
+/* LOGO IMAGE */
+img { /* Logo Image */
+    /*width: 241px;
+    height: 133px;*/
+    width: 500px;
+    height: 400px;
+    /*margin-left: 1px;*/
+}
+/* Content Place holder */
+#mid { /* The middle section */
+    text-align: center;
+    /*background-image: linear-gradient(to bottom right,#164a41, #9DC88D, #164a41);*/
+    padding: 5px 25px 25px 25px;
+    text-align: center;
+}
+
+    #mid p.description { /* a specfifc instance of p tag used */
+        text-align: center;
+    }
+
+/* Buttons */
+
+.button { /* Button for whole website */
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    /*background-color: #164A41;*/
+    background: rgba(11,156,49);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0 8px 27px;
+    cursor: pointer;
+    position: center;
+}
+
+    .button.hover {
+        opacity: 0.8;
+    }
+
+
+/* Login Form*/
+
+.inputbox { /* Box for text design  */
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: incline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    position: center;
+    padding: 14px 20px;
+    margin: 8px 0 8px 27px;
+}
+
+
+
+.container { /* Consistant container */
+
+
+    background: rgba(11,156,49,0.4);
+    width: max-content; /* Makes the width be as wide as the content within it*/
+
+    height: 350px;
+    margin: 100px auto;
+    padding: 25px 28px;
+    border-radius: 4px;
+    border: 1px solid black;
+}
+
+
+
+.container_manage { /* Specfifc conatiner on manage page */
+    padding: 10px;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+}
+
+.label { /* Label design consistant  */
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+    /*display:block;*/
+    text-decoration-line: underline;
+    font-size: 20px;
+}
+
+/* GRIDVIEW */
+
+.gridview { /* GridView for the view flower page */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
